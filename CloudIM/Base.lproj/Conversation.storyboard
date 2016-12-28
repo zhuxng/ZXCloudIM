@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZCU-yx-1SX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conversation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ZXConversationViewController" customModule="CloudIM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aeH-7X-dla"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-558"/>
+        </scene>
+        <!--最近回话-->
+        <scene sceneID="lSL-2O-i1o">
+            <objects>
+                <viewController id="8Jp-jz-lIT" customClass="ZXConversationListViewController" customModule="CloudIM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YRl-Ga-onL"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBn-EA-b4r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IYz-Yw-F9i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="最近回话" id="rsC-HB-8yK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qAt-cJ-eg2">
+                            <connections>
+                                <action selector="showMenu:" destination="8Jp-jz-lIT" id="xIo-JM-whb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2F-SI-ADE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="-564"/>
+        </scene>
+        <!--会话-->
+        <scene sceneID="PgC-4d-wRu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZCU-yx-1SX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="会话" image="tabbar_huihua_highlighted" selectedImage="tabbar_huihua" id="Dbi-X7-5km"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J1a-OV-g7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Jp-jz-lIT" kind="relationship" relationship="rootViewController" id="Nqp-aw-lKV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIF-eE-BbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343.19999999999999" y="-563.56821589205401"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_huihua" width="29" height="29"/>
+        <image name="tabbar_huihua_highlighted" width="29" height="29"/>
+    </resources>
+</document>

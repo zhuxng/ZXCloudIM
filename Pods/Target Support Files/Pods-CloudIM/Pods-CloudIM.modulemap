@@ -1,0 +1,6 @@
+framework module Pods_CloudIM {
+  umbrella header "Pods-CloudIM-umbrella.h"
+
+  export *
+  module * { export * }
+}

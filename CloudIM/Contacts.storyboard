@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O2V-XU-aev">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--通信录-->
+        <scene sceneID="qj7-1b-UwG">
+            <objects>
+                <viewController id="O8N-e0-xcS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sdd-LI-eNj"/>
+                        <viewControllerLayoutGuide type="bottom" id="zgR-6l-DM6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BwJ-cR-5gA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="通信录" id="5LV-BW-3nB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3g-Gf-95v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="110.19490254872565"/>
+        </scene>
+        <!--通信录-->
+        <scene sceneID="cUe-6L-UFV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2V-XU-aev" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通信录" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="Fl9-BV-mQD"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ykB-2i-bLx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O8N-e0-xcS" kind="relationship" relationship="rootViewController" id="fkZ-nS-TFt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5W-x9-dWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343.19999999999999" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_profile" width="30" height="30"/>
+        <image name="tabbar_profile_highlighted" width="30" height="30"/>
+    </resources>
+</document>

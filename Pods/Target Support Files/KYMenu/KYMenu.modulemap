@@ -1,0 +1,6 @@
+framework module KYMenu {
+  umbrella header "KYMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
